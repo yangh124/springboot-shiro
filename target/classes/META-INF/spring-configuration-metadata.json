@@ -1,0 +1,30 @@
+{
+  "groups": [
+    {
+      "name": "shiro",
+      "type": "com.yh.shiro.config.ShiroPerUrlConfig",
+      "sourceType": "com.yh.shiro.config.ShiroPerUrlConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "shiro.anon",
+      "type": "java.util.List<java.lang.String>",
+      "description": "无需登录可访问url",
+      "sourceType": "com.yh.shiro.config.ShiroPerUrlConfig"
+    },
+    {
+      "name": "shiro.cluster",
+      "type": "java.lang.Boolean",
+      "description": "是否开启集群模式",
+      "sourceType": "com.yh.shiro.config.ShiroPerUrlConfig"
+    },
+    {
+      "name": "shiro.session-timeout",
+      "type": "java.lang.Long",
+      "description": "session超时时间（秒）",
+      "sourceType": "com.yh.shiro.config.ShiroPerUrlConfig"
+    }
+  ],
+  "hints": []
+}
