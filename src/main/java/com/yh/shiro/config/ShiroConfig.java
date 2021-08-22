@@ -67,8 +67,8 @@ public class ShiroConfig {
         ShiroFilterFactoryBean shiroFilterFactoryBean = new ShiroFilterFactoryBean();
         // Shiro的核心安全接口,这个属性是必须的
         shiroFilterFactoryBean.setSecurityManager(securityManager);
-        //登录url
-        shiroFilterFactoryBean.setLoginUrl("/login");
+        //身份认证失败，则跳转到登录页面的配置
+        //shiroFilterFactoryBean.setLoginUrl("/login");
         //没有权限跳转的url
         shiroFilterFactoryBean.setUnauthorizedUrl("/unauth");
         Map<String, String> filterChainDefinitionMap = new LinkedHashMap<>();
