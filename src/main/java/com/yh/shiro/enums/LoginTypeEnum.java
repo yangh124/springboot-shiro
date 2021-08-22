@@ -2,8 +2,6 @@ package com.yh.shiro.enums;
 
 /**
  * @author yh
- *
- * @create 2019/12/31 2:44 下午
  */
 public enum LoginTypeEnum {
 

@@ -1,4 +1,4 @@
-package com.yh.shiro.aop;
+package com.yh.shiro.exception;
 
 import org.apache.shiro.ShiroException;
 import org.springframework.core.Ordered;
@@ -13,9 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * @author opensmile
- * @version 1.0
- * @date 2020/3/25 5:58 下午
+ * @author yh
  */
 @ControllerAdvice
 @Order(value = Ordered.HIGHEST_PRECEDENCE)

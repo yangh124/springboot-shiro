@@ -19,6 +19,9 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author yh
+ */
 @Component
 @ConditionalOnProperty(prefix = "shiro", name = "cluster", havingValue = "true")
 public class RedisSessionDao extends AbstractSessionDAO {
@@ -78,7 +81,7 @@ public class RedisSessionDao extends AbstractSessionDAO {
             return null;
         }
         String sessionkey = keyString(sessionId.toString());
-        Session session = (Session) redisTemplate.opsForValue().get(sessionkey);
+        Session session = redisTemplate.opsForValue().get(sessionkey);
         logger.info("read redis session key: " + sessionkey);
         return session;
     }
